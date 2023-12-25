@@ -1,0 +1,6 @@
+#.gitignore
+#Ignore everything by default
+*
+
+#Preserve directories by including .gitkeep files
+!.gitkeep
