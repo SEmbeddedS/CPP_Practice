@@ -1,13 +1,18 @@
 #include  <iostream>
+#include "sum.h"
 char str[20];
 int main(){
+    int a = 5;
+    int b = 6;
+    std::cout << "Sum of " << a << " and " << b << " is: " << sum(a,b);
+    std::cout << "\n";
     /*Normal Terminal command*/
-    
+    /*
     std::cout << "What's your name?\n";
     std::cin >> str;
     std::cout << "Hello, " << str;
     std::cout << "\n";
-    
+    */
     
     /*Define Variable and print it*/
     /*
