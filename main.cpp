@@ -2,12 +2,12 @@
 char str[20];
 int main(){
     /*Normal Terminal command*/
-    /*
+    
     std::cout << "What's your name?\n";
     std::cin >> str;
     std::cout << "Hello, " << str;
     std::cout << "\n";
-    */
+    
     
     /*Define Variable and print it*/
     /*
