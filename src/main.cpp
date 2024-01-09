@@ -17,6 +17,7 @@ int main() {
     double h = 0.0001;                                       // Step size for finite differences
     bool rR = true;                                          // Variable to check for real roots of equation
     int n = menu();                                          // Menu Display and User selection
+    int exit = 0;
 
     int* a = new int[n + 1];                                 // Dynamically allocate memory for an array of size n+1
     for (int i = 0; i <= n; ++i) {
@@ -46,7 +47,14 @@ int main() {
     }
     
     delete[] a;                                             // To free the dynamically allocated memory
-    return 0;
+
+    // Wait for user input before closing the command window
+    cout << "Press 1 to exit...";
+    cin >> exit;
+    if(exit ==1){
+        return 0;
+    }
+    
 }
 
 //Function corresponding to constants entered
