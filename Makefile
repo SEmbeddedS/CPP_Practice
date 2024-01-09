@@ -20,6 +20,7 @@ $(BUILD_DIR)/%.o: $(SOURCE_DIR)/%.cpp
 	$(COMPILER_CALL) -c $< -o $@
 
 run: build
+	clear
 	./$(BUILD_DIR)/$(EXECUTABLE_NAME)
 clean:
 	rm -f $(BUILD_DIR)/*.o
