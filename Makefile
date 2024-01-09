@@ -15,6 +15,7 @@ CXX_OBJECTS = $(patsubst $(SOURCE_DIR)/%.cpp, $(BUILD_DIR)/%.o, $(CXX_SOURCES)) 
 
 build: $(CXX_OBJECTS)
 	$(COMPILER_CALL) $(CXX_OBJECTS) -o $(BUILD_DIR)/$(EXECUTABLE_NAME)
+	$(COMPILER_CALL) $(CXX_OBJECTS) -o $(BUILD_DIR)/$(EXECUTABLE_NAME).exe
 
 $(BUILD_DIR)/%.o: $(SOURCE_DIR)/%.cpp
 	$(COMPILER_CALL) -c $< -o $@
@@ -24,4 +25,5 @@ run: build
 	./$(BUILD_DIR)/$(EXECUTABLE_NAME)
 clean:
 	rm -f $(BUILD_DIR)/*.o
+	rm -f $(BUILD_DIR)/*.exe
 	rm -f $(BUILD_DIR)/$(EXECUTABLE_NAME)
