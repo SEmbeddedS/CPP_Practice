@@ -54,7 +54,6 @@ int main() {
     if(exit ==1){
         return 0;
     }
-    
 }
 
 //Function corresponding to constants entered
